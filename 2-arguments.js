@@ -1,11 +1,12 @@
-let score = 20;
+const args = process.argv.slice(2);
+const numberOfArguments = args.length;
 
- if(score >= 10 && score <= 15){
+if(numberOfArguments === 0){
     console.log("No Argument");
 }
-else if(score >= 16 && score <= 20){
+else if(numberOfArguments === 1){
     console.log("Argument Found");
 }
-else{
-    console.log("Error Occured");
+else {
+    console.log("Arguments Found");
 }
